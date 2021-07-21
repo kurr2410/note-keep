@@ -1,0 +1,13 @@
+
+
+  <div class="card-columns" >
+      <div class="card bg-warning " style="width:300px" *ngFor="let a of note;">
+      <div class="card-body ">
+        <!-- <h4 class="card-title">{{a.id}}</h4> -->
+        <pre class="card-text">{{a.content}}</pre>
+        <i class="fa fa-trash" (click)="delete(a.id)"> </i>&nbsp;&nbsp;
+        <i class="fa fa-edit" (click)="edit(a)"></i>
+      </div>
+    </div>
+  </div>
+

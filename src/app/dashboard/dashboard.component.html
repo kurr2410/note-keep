@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row top">
+    <div class="col-lg-6">
+      <textarea #inputToFocus placeholder="Type Here" [(ngModel)]="content" (blur)="add()"></textarea>
+
+    </div>
+    <div class="col-lg-2">
+      <button class="btn btn-primary" (click)="add()"><i class="fa fa-plus"></i></button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <app-note-cards [note]=arr (deleteId)='delete($event)' (editNote)="edit($event)"></app-note-cards>
+
+    </div>
+  </div>
+</div>
